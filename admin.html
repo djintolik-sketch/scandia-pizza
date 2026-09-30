@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Scandia Pizza — Демо-адмінка</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+<div class="demo-bar">ДЕМО-АДМІНКА · ЗАМОВЛЕННЯ ЗБЕРІГАЮТЬСЯ ЛИШЕ В ЦЬОМУ БРАУЗЕРІ</div>
+<header class="site-header">
+  <a class="brand" href="index.html#top"><span>SCANDIA</span><small>PIZZA · ITALIAN PIZZERIA</small></a>
+  <div class="header-actions"><a class="phone" href="index.html">← До сайту</a></div>
+</header>
+<main class="admin-main">
+  <section class="section admin-head-section">
+    <div class="section-head"><div><div class="eyebrow">BACK OFFICE · DEMO</div><h1>Замовлення</h1><p>Робоча локальна демонстрація процесу прийому та обробки замовлень.</p></div><div class="admin-actions"><button class="btn btn-ghost" id="export-orders">Експорт JSON</button><button class="btn btn-ghost" id="clear-orders">Очистити демо</button></div></div>
+    <div class="admin-stats" id="stats"></div>
+    <div class="admin-toolbar"><input id="order-search" type="search" placeholder="Пошук № замовлення, ім'я, телефон"><select id="status-filter"><option value="ALL">Усі статуси</option><option value="NEW">Нові</option><option value="CONFIRMED">Підтверджені</option><option value="PREPARING">Готуються</option><option value="READY">Готові</option><option value="DELIVERING">Доставляються</option><option value="COMPLETED">Виконані</option><option value="CANCELLED">Скасовані</option></select></div>
+    <div id="orders" class="orders-list"></div>
+  </section>
+</main>
+<footer><div><a class="brand" href="index.html#top"><span>SCANDIA</span><small>PIZZA · ITALIAN PIZZERIA</small></a><p>Демо-контур замовлень без backend.</p></div><small>© 2026 Scandia Pizza</small></footer>
+<script src="admin.js"></script>
+</body>
+</html>

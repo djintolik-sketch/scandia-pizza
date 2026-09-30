@@ -1,0 +1,9 @@
+*.zip
+*.mhtml
+*.exe
+*.windmd
+README.txt
+scandia_v5/
+Microsoft.Services.Store.windmd
+Microsoft.Services.Store.windmd
+Microsoft.Services.Store.winmd
