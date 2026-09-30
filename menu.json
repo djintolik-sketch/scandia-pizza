@@ -1,936 +1,840 @@
 {
-  "source": "ChoiceQR snapshot 30.09.2026 12:39",
+  "source": "ChoiceQR snapshot supplied by user",
+  "snapshot": "2026-09-29/30",
+  "categories": {
+    "all": "Все",
+    "pizza": "Піца",
+    "fry": "Фритюр",
+    "combo": "Комбо",
+    "sauces": "Соуси",
+    "drinks": "Напої",
+    "offers": "Акції"
+  },
   "items": [
     {
-      "id": "shaurma-kuryacha",
       "name": "Шаурма куряча",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 332.5,
-      "description": "Тісто, соус шаурма, сир моцарела, курка копчена, курка варена, цибуля маринована, огірки, томати, морква по корейські та ще соус шаурма",
-      "labels": [
-        "680/1040г Новинка",
-        "680/1040г",
-        "Новинка"
-      ],
+      "old": 350,
+      "desc": "Тісто, соус шаурма, сир моцарела, курка копчена, курка варена, цибуля маринована, огірки, томати, морква по корейські та ще соус шаурма",
+      "weight": "680/1040 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_RRKKd-iwXUo-FWBbq.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/shaurma-kuryacha"
+      "badge": "НОВИНКА",
+      "id": 1
     },
     {
-      "id": "shaurma-z-yalovichinoyu",
       "name": "Шаурма з яловичиною",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 370.5,
-      "description": "Тісто, соус шаурма, сир моцарела, яловичина смажена, цибуля маринована, огірки, томати, морква по корейські та ще соус шаурма",
-      "labels": [
-        "680/1040г Новинка",
-        "680/1040г",
-        "Новинка"
-      ],
+      "old": 390,
+      "desc": "Тісто, соус шаурма, сир моцарела, яловичина смажена, цибуля маринована, огірки, томати, морква по корейські та ще соус шаурма",
+      "weight": "680/1040 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_qUEoy-PeOdx-rXqGA.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/shaurma-z-yalovichinoyu"
+      "badge": "НОВИНКА",
+      "id": 2
     },
     {
-      "id": "chizburger",
       "name": "Чізбургер",
-      "category": "Піца",
-      "price": 304.0,
-      "description": "Тісто, соус бургерний, сир моцарела, сир чеддер, яловичина смажена, цибуля маринована, огірки солоні, томати, гірчиця та кетчуп",
-      "labels": [
-        "630/990г"
-      ],
+      "cat": "pizza",
+      "price": 304,
+      "old": 320,
+      "desc": "Тісто, соус бургерний, сир моцарела, сир чеддер, яловичина смажена, цибуля маринована, огірки солоні, томати, гірчиця та кетчуп",
+      "weight": "630/990 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_KYJFi-ZmlqD-bhXXw.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/chizburger"
+      "badge": "",
+      "id": 3
     },
     {
-      "id": "buritos",
       "name": "Бурітос",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 332.5,
-      "description": "Тісто, соус мехікано, сир моцарела, яловичина смажена, кукурудза, цибуля маринована, томати, перець солодкий та перець чилі",
-      "labels": [
-        "640/1005г Гостре",
-        "640/1005г",
-        "Гостре"
-      ],
+      "old": 350,
+      "desc": "Тісто, соус мехікано, сир моцарела, яловичина смажена, кукурудза, цибуля маринована, томати, перець солодкий та перець чилі",
+      "weight": "640/1005 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_nMjJC-bdNeG-ePpJq.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/buritos"
+      "badge": "ГОСТРЕ",
+      "id": 4
     },
     {
-      "id": "krevetka",
       "name": "Креветка",
-      "category": "Піца",
-      "price": 399.0,
-      "description": "Тісто, соус вершковий, сир моцарела, креветки, з одного боку -томати з грибами, а з іншого -спаржа та оливки, соус теріякі",
-      "labels": [
-        "610/960г"
-      ],
+      "cat": "pizza",
+      "price": 399,
+      "old": 420,
+      "desc": "Тісто, соус вершковий, сир моцарела, креветки, томати з грибами, спаржа та оливки, соус теріякі",
+      "weight": "610/960 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_aWzxl-LdecH-mDPgl.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/krevetka"
+      "badge": "",
+      "id": 5
     },
     {
-      "id": "iegerska",
       "name": "Єгерська",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 313.5,
-      "description": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, гриби, маринована цибуля та багато картоплі фрі",
-      "labels": [
-        "680/1070г"
-      ],
+      "old": 330,
+      "desc": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, гриби, маринована цибуля та багато картоплі фрі",
+      "weight": "680/1070 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IkhGe-DMxeG-FgirH.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/iegerska"
+      "badge": "",
+      "id": 6
     },
     {
-      "id": "kukurudzyaniy-vayb",
       "name": "Кукурудзяний вайб",
-      "category": "Піца",
-      "price": 304.0,
-      "description": "Тісто, соус вершковий, сир моцарела, кукурудза, курка варена, мисливські ковбаски, перець солодкий, цибуля маринована",
-      "labels": [
-        "625/970г"
-      ],
+      "cat": "pizza",
+      "price": 304,
+      "old": 320,
+      "desc": "Тісто, соус вершковий, сир моцарела, кукурудза, курка варена, мисливські ковбаски, перець солодкий, цибуля маринована",
+      "weight": "625/970 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_DoKbG-AOyIg-FeCdf.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/kukurudzyaniy-vayb"
+      "badge": "",
+      "id": 7
     },
     {
-      "id": "midiyi-pesto-z-sirom",
       "name": "Мідії песто з сиром",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 332.5,
-      "description": "Тісто, соус вершковий, сир моцарела, мідії, сир фета, сир дор блю, томати, соус песто",
-      "labels": [
-        "615/1000г"
-      ],
+      "old": 350,
+      "desc": "Тісто, соус вершковий, сир моцарела, мідії, сир фета, сир дор блю, томати, соус песто",
+      "weight": "615/1000 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bDLRg-brJPw-Ilkgv.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/midiyi-pesto-z-sirom"
+      "badge": "",
+      "id": 8
     },
     {
-      "id": "grusha-dor-blyu-z-chornoslivom",
       "name": "Груша Дор Блю з чорносливом",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус вершковий, груша, сир моцарела, сир дор блю, чорнослив",
-      "labels": [
-        "580/940г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус вершковий, груша, сир моцарела, сир дор блю, чорнослив",
+      "weight": "580/940 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_EcTPe-urqOa-RANyz.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/grusha-dor-blyu-z-chornoslivom"
+      "badge": "",
+      "id": 9
     },
     {
-      "id": "vershkova-chorizo-z-pesto",
       "name": "Вершкова чорізо з песто",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, чорізо, томати, гриби, соус песто",
-      "labels": [
-        "585/910г"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, чорізо, томати, гриби, соус песто",
+      "weight": "585/910 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_xSzqs-SSADM-QAkUG.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/vershkova-chorizo-z-pesto"
+      "badge": "",
+      "id": 10
     },
     {
-      "id": "miks-salyami-chiz",
       "name": "Мікс салямі чіз",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, соус вершковий, сир моцарела, сир дор блю, салямі, чорізо",
-      "labels": [
-        "560/900г"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус вершковий, сир моцарела, сир дор блю, салямі, чорізо",
+      "weight": "560/900 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_tMuHF-bEwCt-FQQKr.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/miks-salyami-chiz"
+      "badge": "",
+      "id": 11
     },
     {
-      "id": "karbonara",
       "name": "Карбонара",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, соус вершковий, сир моцарела, сир пармезан, шинка, бекон, курка варена, жовток, гриби",
-      "labels": [
-        "600/935г"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус вершковий, сир моцарела, сир пармезан, шинка, бекон, курка варена, жовток, гриби",
+      "weight": "600/935 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_HuQNZ-aMWHb-SzHhq.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/karbonara"
+      "badge": "",
+      "id": 12
     },
     {
-      "id": "royal-cezar",
       "name": "ROYAL Цезарь",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, соус вершковий, сир моцарела, сир фета, курка варена, копчена курка, томати, салат",
-      "labels": [
-        "600/970г"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус вершковий, сир моцарела, сир фета, курка варена, копчена курка, томати, салат",
+      "weight": "600/970 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_xxvXk-flDdS-CJcTC.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/royal-cezar"
+      "badge": "",
+      "id": 13
     },
     {
-      "id": "ukrayinska",
       "name": "Українська",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, бекон, цибуля маринована, гриби, огірки солоні",
-      "labels": [
-        "610/970г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, бекон, цибуля маринована, гриби, огірки солоні",
+      "weight": "610/970 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IwxJC-DDvwT-ecDNg.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/ukrayinska"
+      "badge": "",
+      "id": 14
     },
     {
-      "id": "4-siri",
       "name": "4 сири",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус вершковий, сир моцарела, сир фета, сир дор блю, сир пармезан",
-      "labels": [
-        "535/860г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус вершковий, сир моцарела, сир фета, сир дор блю, сир пармезан",
+      "weight": "535/860 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_hmeaC-szlZm-GShCH.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/4-siri"
+      "badge": "",
+      "id": 15
     },
     {
-      "id": "gavayska",
       "name": "Гавайська",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус вершковий, сир моцарела, шинка, курка варена, ананас",
-      "labels": [
-        "570/910г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус вершковий, сир моцарела, шинка, курка варена, ананас",
+      "weight": "570/910 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_XTDPF-fMCIB-CkTpf.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/gavayska"
+      "badge": "",
+      "id": 16
     },
     {
-      "id": "dityacha",
       "name": "Дитяча",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус томатний, сир моцарела, салямі, курка варена, картопля фрі",
-      "labels": [
-        "580/910г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус томатний, сир моцарела, салямі, курка варена, картопля фрі",
+      "weight": "580/910 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_uIYJk-CBimE-JSCEz.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/dityacha"
+      "badge": "",
+      "id": 17
     },
     {
-      "id": "margarita",
       "name": "Маргарита",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 237.5,
-      "description": "Тісто, соус томатний, сир моцарела, томати",
-      "labels": [
-        "520/840г"
-      ],
+      "old": 250,
+      "desc": "Тісто, соус томатний, сир моцарела, томати",
+      "weight": "520/840 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_jKbWM-wbXXN-xqLsC.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/margarita"
+      "badge": "",
+      "id": 18
     },
     {
-      "id": "salyami",
       "name": "Салямі",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус томатний, сир моцарела, салямі, перець солодкий, маслини, томати",
-      "labels": [
-        "580/930г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус томатний, сир моцарела, салямі, перець солодкий, маслини, томати",
+      "weight": "580/930 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_tbDRG-sklBq-OSUvD.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/salyami"
+      "badge": "",
+      "id": 19
     },
     {
-      "id": "peperoni",
       "name": "Пепероні",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, соус томатний, сир моцарела, чорізо, томати",
-      "labels": [
-        "580/900г"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус томатний, сир моцарела, чорізо, томати",
+      "weight": "580/900 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IzevG-sCtLT-Cicpj.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/peperoni"
+      "badge": "",
+      "id": 20
     },
     {
-      "id": "neapolitanska",
       "name": "Неаполітанська",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус томатний, сир моцарелла, шинка, гриби, ананаси, томати",
-      "labels": [
-        "590/950г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус томатний, сир моцарела, шинка, гриби, ананаси, томати",
+      "weight": "590/950 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_dqaYn-iZZDX-GmSLF.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/neapolitanska"
+      "badge": "",
+      "id": 21
     },
     {
-      "id": "siciliyska",
       "name": "Сицилійська",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус томатний, сир моцарела, шинка, бекон, перець солодкий, маслини",
-      "labels": [
-        "570/900г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус томатний, сир моцарела, шинка, бекон, перець солодкий, маслини",
+      "weight": "570/900 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_NXKDD-zTeGG-sRJAv.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/siciliyska"
+      "badge": "",
+      "id": 22
     },
     {
-      "id": "m-yasna",
       "name": "Мʼясна",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, сокс томатний, сир моцарела, салямі, шинка, бекон, копчена курка, томати",
-      "labels": [
-        "590/930г"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус томатний, сир моцарела, салямі, шинка, бекон, копчена курка, томати",
+      "weight": "590/930 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IkYXd-lYaRW-BkLCI.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/m-yasna"
+      "badge": "",
+      "id": 23
     },
     {
-      "id": "domashnya",
       "name": "Домашня",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, соус томатний, сир моцарела, сир пармезан, салямі, чорізо, мисливські ковбаски, курка варена, цибуля маринована, перець солодкий, томати",
-      "labels": [
-        "615/980г"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус томатний, сир моцарела, сир пармезан, салямі, чорізо, мисливські ковбаски, курка варена, цибуля маринована, перець солодкий, томати",
+      "weight": "615/980 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_OJjJw-FekXa-HcFbF.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/domashnya"
+      "badge": "",
+      "id": 24
     },
     {
-      "id": "amerikano",
       "name": "Американо",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус томатний, сир моцарела, мисливські ковбаски, курка варена, цибуля маринована, перець солодкий, томати",
-      "labels": [
-        "570/900г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус томатний, сир моцарела, мисливські ковбаски, курка варена, цибуля маринована, перець солодкий, томати",
+      "weight": "570/900 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_BsVEt-rFgJG-jlglJ.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/amerikano"
+      "badge": "",
+      "id": 25
     },
     {
-      "id": "vvq",
       "name": "ВВQ",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус барбекю, сир моцарела, бекон, курка варена, копчена курка, цибуля маринована, гриби",
-      "labels": [
-        "580/900г"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус барбекю, сир моцарела, бекон, курка варена, копчена курка, цибуля маринована, гриби",
+      "weight": "580/900 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_CaMID-RIHSD-eckIe.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/vvq"
+      "badge": "",
+      "id": 26
     },
     {
-      "id": "bavarskiy-mislivec",
       "name": "Баварський мисливець",
-      "category": "Піца",
+      "cat": "pizza",
       "price": 275.5,
-      "description": "Тісто, соус барбекю, сир моцарела, мисливські ковбаски, чорізо, бекон, цибуля маринована, перець солодкий, перець чилі, солоні огірки",
-      "labels": [
-        "620/975г Гостре",
-        "620/975г",
-        "Гостре"
-      ],
+      "old": 290,
+      "desc": "Тісто, соус барбекю, сир моцарела, мисливські ковбаски, чорізо, бекон, цибуля маринована, перець солодкий, перець чилі, солоні огірки",
+      "weight": "620/975 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ndWfm-vnOMO-JmkLP.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/bavarskiy-mislivec"
+      "badge": "ГОСТРЕ",
+      "id": 27
     },
     {
-      "id": "tropikana-chili",
       "name": "Тропікана чилі",
-      "category": "Піца",
-      "price": 266.0,
-      "description": "Тісто, соус барбекю, сир моцарела, курка варена, перец чилі, маслини ананас",
-      "labels": [
-        "580/915г Гостре",
-        "580/915г",
-        "Гостре"
-      ],
+      "cat": "pizza",
+      "price": 266,
+      "old": 280,
+      "desc": "Тісто, соус барбекю, сир моцарела, курка варена, перець чилі, маслини, ананас",
+      "weight": "580/915 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_kbWxb-WszGh-IZXLs.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica/tropikana-chili"
+      "badge": "ГОСТРЕ",
+      "id": 28
     },
     {
-      "id": "novinka-no1",
       "name": "НОВИНКА №1",
-      "category": "Піца НОВИНКА",
-      "price": 199.0,
-      "description": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, мисливські ковбаски, шинка, гриби, соус песто",
-      "labels": [
-        "540/870г Новинка АКЦІЯ",
-        "540/870г",
-        "Новинка",
-        "АКЦІЯ"
-      ],
+      "cat": "pizza",
+      "price": 199,
+      "old": null,
+      "desc": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, мисливські ковбаски, шинка, гриби, соус песто",
+      "weight": "540/870 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_BLLVp-IFHSF-JMvjj.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica-novinka/novinka-no1"
+      "badge": "НОВИНКА",
+      "id": 29
     },
     {
-      "id": "novinka-no2",
       "name": "НОВИНКА №2",
-      "category": "Піца НОВИНКА",
-      "price": 199.0,
-      "description": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, курка відварена, гриби, соус песто",
-      "labels": [
-        "540/870г Новинка АКЦІЯ",
-        "540/870г",
-        "Новинка",
-        "АКЦІЯ"
-      ],
+      "cat": "pizza",
+      "price": 199,
+      "old": null,
+      "desc": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, курка відварена, гриби, соус песто",
+      "weight": "540/870 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_GqsaH-xEFOD-Ojgxy.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica-novinka/novinka-no2"
+      "badge": "НОВИНКА",
+      "id": 30
     },
     {
-      "id": "novinka-no3",
       "name": "НОВИНКА №3",
-      "category": "Піца НОВИНКА",
-      "price": 199.0,
-      "description": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, копчена курка, бекон, гриби, помідори, соус песто",
-      "labels": [
-        "540/870г Новинка АКЦІЯ",
-        "540/870г",
-        "Новинка",
-        "АКЦІЯ"
-      ],
+      "cat": "pizza",
+      "price": 199,
+      "old": null,
+      "desc": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, копчена курка, бекон, гриби, помідори, соус песто",
+      "weight": "540/870 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bJTHw-RcFGC-CBCsV.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/pica/pica-novinka/novinka-no3"
+      "badge": "НОВИНКА",
+      "id": 31
     },
     {
-      "id": "kartoplya-fri",
       "name": "Картопля фрі",
-      "category": "Фритюр меню",
-      "price": 57.0,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "cat": "fry",
+      "price": 57,
+      "old": 60,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ZnWkF-EvUcy-IeAHD.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/kartoplya-fri"
+      "badge": "",
+      "id": 32
     },
     {
-      "id": "kartoplya-dip",
       "name": "Картопля Діп",
-      "category": "Фритюр меню",
+      "cat": "fry",
       "price": 71.25,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "old": 75,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_DxMJK-wmgpn-ItwoX.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/kartoplya-dip"
+      "badge": "",
+      "id": 33
     },
     {
-      "id": "kartoplya-po-selyanski",
       "name": "Картопля по-селянськи",
-      "category": "Фритюр меню",
+      "cat": "fry",
       "price": 71.25,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "old": 75,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_fdrtC-nwpia-NmJvH.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/kartoplya-po-selyanski"
+      "badge": "",
+      "id": 34
     },
     {
-      "id": "deruni-kartoplyani",
       "name": "Деруни картопляні",
-      "category": "Фритюр меню",
-      "price": 114.0,
-      "description": "Замовляючи дві порції - третя порція буде у подарунок!",
-      "labels": [
-        "240г"
-      ],
+      "cat": "fry",
+      "price": 114,
+      "old": 120,
+      "desc": "Замовляючи дві порції — третя порція буде у подарунок!",
+      "weight": "240 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bTMCM-BEAGV-YDizr.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/deruni-kartoplyani"
+      "badge": "",
+      "id": 35
     },
     {
-      "id": "kilcya-cibuli",
       "name": "Кільця цибулі",
-      "category": "Фритюр меню",
-      "price": 114.0,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "cat": "fry",
+      "price": 114,
+      "old": 120,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ItsdJ-bLDjc-DqNrq.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/kilcya-cibuli"
+      "badge": "",
+      "id": 36
     },
     {
-      "id": "stripsi-kuryachi",
       "name": "Стріпси курячі",
-      "category": "Фритюр меню",
-      "price": 152.0,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "cat": "fry",
+      "price": 152,
+      "old": 160,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_dFmCp-kUmYC-PmFAH.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/stripsi-kuryachi"
+      "badge": "",
+      "id": 37
     },
     {
-      "id": "nagetsi",
       "name": "Нагетси",
-      "category": "Фритюр меню",
-      "price": 114.0,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "cat": "fry",
+      "price": 114,
+      "old": 120,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_GNOrI-GRmCP-lFgLX.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/nagetsi"
+      "badge": "",
+      "id": 38
     },
     {
-      "id": "hrustki-krilcya-srispy",
       "name": "Хрусткі крильця Сrispy",
-      "category": "Фритюр меню",
+      "cat": "fry",
       "price": 218.5,
-      "description": "",
-      "labels": [
-        "290г"
-      ],
+      "old": 230,
+      "desc": "",
+      "weight": "290 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_eCUkf-IFCrF-DDRFo.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/hrustki-krilcya-srispy"
+      "badge": "",
+      "id": 39
     },
     {
-      "id": "sirni-kulki-filadelfiya",
       "name": "Сирні кульки Філадельфія",
-      "category": "Фритюр меню",
-      "price": 228.0,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "cat": "fry",
+      "price": 228,
+      "old": 240,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_nJHhO-PViko-cNPeo.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/sirni-kulki-filadelfiya"
+      "badge": "",
+      "id": 40
     },
     {
-      "id": "sirni-palichki-mocarela",
       "name": "Сирні палички Моцарела",
-      "category": "Фритюр меню",
+      "cat": "fry",
       "price": 218.5,
-      "description": "Сирні палички - це ідеальне поєднання м'якого сиру та хрумкого панування .\nВага порції - 150 грам або 5 шт.",
-      "labels": [
-        "150г"
-      ],
+      "old": 230,
+      "desc": "Сирні палички — м'який сир та хрумке панування. Вага порції — 150 г або 5 шт.",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IivCb-RgdFI-bnJkK.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/sirni-palichki-mocarela"
+      "badge": "",
+      "id": 41
     },
     {
-      "id": "sirni-kulki-chedder-z-percem-chili",
       "name": "Сирні кульки Чеддер з перцем Чилі",
-      "category": "Фритюр меню",
+      "cat": "fry",
       "price": 237.5,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
+      "old": 250,
+      "desc": "",
+      "weight": "150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_EugDJ-LyDvz-fJDtD.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/frityur-menyu/sirni-kulki-chedder-z-percem-chili"
+      "badge": "ГОСТРЕ",
+      "id": 42
     },
     {
-      "id": "kombo-boks-no1-300-g-sous-v-podarunok",
       "name": "Комбо бокс №1 (300 г) + соус в подарунок",
-      "category": "КОМБО БОКСИ",
-      "price": 190.0,
-      "description": "Бокс містить:\nКартопля ФРІ\nНагетси курячі",
-      "labels": [
-        "300г"
-      ],
+      "cat": "combo",
+      "price": 190,
+      "old": null,
+      "desc": "Бокс містить: Картопля ФРІ, Нагетси курячі",
+      "weight": "300 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_yFYym-wZSbe-FGyZH.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/kombo-boksi/kombo-boks-no1-300-g-sous-v-podarunok"
+      "badge": "КОМБО",
+      "id": 43
     },
     {
-      "id": "kombo-boks-no2-450-g-2-sousa-v-podarunok",
       "name": "Комбо бокс №2 (450 г) + 2 соуса в подарунок",
-      "category": "КОМБО БОКСИ",
-      "price": 300.0,
-      "description": "Бокс містить:\nКартопля ФРІ \nНагетси курячі \nКільця цибулі",
-      "labels": [
-        "450г"
-      ],
+      "cat": "combo",
+      "price": 300,
+      "old": null,
+      "desc": "Бокс містить: Картопля ФРІ, Нагетси курячі, Кільця цибулі",
+      "weight": "450 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ZvyWQ-NHIQC-fUzjD.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/kombo-boksi/kombo-boks-no2-450-g-2-sousa-v-podarunok"
+      "badge": "КОМБО",
+      "id": 44
     },
     {
-      "id": "kombo-boks-no3-690-g-3-sousa-v-podarunok",
       "name": "Комбо бокс №3 (690 г) + 3 соуса в подарунок",
-      "category": "КОМБО БОКСИ",
-      "price": 410.0,
-      "description": "Бокс містить:\nКартопля ФРІ\nДеруни\nНагетси\nКільця цибулі",
-      "labels": [
-        "690г"
-      ],
+      "cat": "combo",
+      "price": 410,
+      "old": null,
+      "desc": "Бокс містить: Картопля ФРІ, Деруни, Нагетси, Кільця цибулі",
+      "weight": "690 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_Fkkck-vJxPi-RKGRI.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/kombo-boksi/kombo-boks-no3-690-g-3-sousa-v-podarunok"
+      "badge": "КОМБО",
+      "id": 45
     },
     {
-      "id": "kombo-boks-no4-990-g-4-sousa-v-podarunok",
       "name": "Комбо бокс №4 (990 г) + 4 соуса в подарунок",
-      "category": "КОМБО БОКСИ",
-      "price": 715.0,
-      "description": "Бокс містить:\nКартопля ФРІ \nКартопля по-селянськи\nДеруни\nНагетси курячі \nКількість цибулі \nХрусткі сирні кульки Філадельфія",
-      "labels": [
-        "990г"
-      ],
+      "cat": "combo",
+      "price": 715,
+      "old": null,
+      "desc": "Бокс містить: Картопля ФРІ, Картопля по-селянськи, Деруни, Нагетси курячі, Кільця цибулі, Хрусткі сирні кульки Філадельфія",
+      "weight": "990 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_uKrfU-iwikb-aboAf.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/kombo-boksi/kombo-boks-no4-990-g-4-sousa-v-podarunok"
+      "badge": "КОМБО",
+      "id": 46
     },
     {
-      "id": "kombo-boks-no5-1200-g-5-sousiv-v-podarunok",
       "name": "Комбо бокс №5 (1200 г) + 5 соусів в подарунок",
-      "category": "КОМБО БОКСИ",
-      "price": 1100.0,
-      "description": "Бокс містить:\nКартопля ФРІ \nКартопля по-селянськи\nДеруни\nНагетси курячі \nСтріпси \nКільця цибулі \nСирні кульки ЧЕДДЕР з перцем Чилі \nХрусткі сирні кульки Філадельфія",
-      "labels": [
-        "1200г"
-      ],
+      "cat": "combo",
+      "price": 1100,
+      "old": null,
+      "desc": "Бокс містить: Картопля ФРІ, Картопля по-селянськи, Деруни, Нагетси курячі, Стріпси, Кільця цибулі, Сирні кульки ЧЕДДЕР з перцем Чилі, Хрусткі сирні кульки Філадельфія",
+      "weight": "1200 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ITSlT-YwkGN-YVfAt.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/kombo-boksi/kombo-boks-no5-1200-g-5-sousiv-v-podarunok"
+      "badge": "КОМБО",
+      "id": 47
     },
     {
-      "id": "smetana-50-g",
       "name": "Сметана 50 г.",
-      "category": "Соуси",
-      "price": 35.0,
-      "description": "",
-      "labels": [
-        "50г"
-      ],
+      "cat": "sauces",
+      "price": 35,
+      "old": null,
+      "desc": "",
+      "weight": "50 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_lhAzP-efySd-xkxUI.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/sousi/smetana-50-g."
+      "badge": "",
+      "id": 48
     },
     {
-      "id": "sous-ketchup-28-g",
       "name": "Соус кетчуп 28 г.",
-      "category": "Соуси",
-      "price": 15.0,
-      "description": "",
-      "labels": [
-        "28г"
-      ],
+      "cat": "sauces",
+      "price": 15,
+      "old": null,
+      "desc": "",
+      "weight": "28 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_Ceajq-xjRkM-OtzmJ.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/sousi/sous-ketchup-28-g."
+      "badge": "",
+      "id": 49
     },
     {
-      "id": "sous-kislo-solodkiy-25-g",
       "name": "Соус кисло-солодкий 25 г.",
-      "category": "Соуси",
-      "price": 15.0,
-      "description": "",
-      "labels": [
-        "25г"
-      ],
+      "cat": "sauces",
+      "price": 15,
+      "old": null,
+      "desc": "",
+      "weight": "25 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_LNoYb-kYllU-AOqoG.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/sousi/sous-kislo-solodkiy-25-g."
+      "badge": "",
+      "id": 50
     },
     {
-      "id": "sous-bbq-28-g",
       "name": "Соус BBQ 28 г.",
-      "category": "Соуси",
-      "price": 15.0,
-      "description": "",
-      "labels": [
-        "28г"
-      ],
+      "cat": "sauces",
+      "price": 15,
+      "old": null,
+      "desc": "",
+      "weight": "28 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_RWPFu-vDqFg-JbNiM.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/sousi/sous-bbq-28-g."
+      "badge": "",
+      "id": 51
     },
     {
-      "id": "sous-sirniy-24-g",
       "name": "Соус сирний 24 г.",
-      "category": "Соуси",
-      "price": 15.0,
-      "description": "",
-      "labels": [
-        "24г"
-      ],
+      "cat": "sauces",
+      "price": 15,
+      "old": null,
+      "desc": "",
+      "weight": "24 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_FpKiC-pjWKC-ylyIH.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/sousi/sous-sirniy-24-g."
+      "badge": "",
+      "id": 52
     },
     {
-      "id": "sous-tartar-24-g",
       "name": "Соус тартар 24 г.",
-      "category": "Соуси",
-      "price": 15.0,
-      "description": "",
-      "labels": [
-        "24г"
-      ],
+      "cat": "sauces",
+      "price": 15,
+      "old": null,
+      "desc": "",
+      "weight": "24 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_kJlvj-sIdnS-WrHGH.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/frityur-menyu/sousi/sous-tartar-24-g."
+      "badge": "",
+      "id": 53
     },
     {
-      "id": "limonad-natahtari-tarhun-500-ml",
       "name": "Лимонад Натахтарі Тархун 500 мл",
-      "category": "Холодні НАПОЇ",
-      "price": 70.0,
-      "description": "",
-      "labels": [
-        "500мл"
-      ],
+      "cat": "drinks",
+      "price": 70,
+      "old": null,
+      "desc": "",
+      "weight": "500 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ugZFq-dJebC-wCUIV.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/limonad-natahtari-tarhun-500-ml"
+      "badge": "",
+      "id": 54
     },
     {
-      "id": "limonad-natahtari-tarhun-1000-ml",
       "name": "Лимонад Натахтарі Тархун 1000 мл",
-      "category": "Холодні НАПОЇ",
-      "price": 100.0,
-      "description": "",
-      "labels": [
-        "1000мл"
-      ],
+      "cat": "drinks",
+      "price": 100,
+      "old": null,
+      "desc": "",
+      "weight": "1000 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_onFym-zvdwI-OepeO.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/limonad-natahtari-tarhun-1000-ml"
+      "badge": "",
+      "id": 55
     },
     {
-      "id": "limonad-natahtari-grusha-500-ml",
       "name": "Лимонад Натахтарі Груша 500 мл",
-      "category": "Холодні НАПОЇ",
-      "price": 70.0,
-      "description": "",
-      "labels": [
-        "500мл"
-      ],
+      "cat": "drinks",
+      "price": 70,
+      "old": null,
+      "desc": "",
+      "weight": "500 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bBFEI-HJsgk-jlcaG.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/limonad-natahtari-grusha-500-ml"
+      "badge": "",
+      "id": 56
     },
     {
-      "id": "limonad-natahtari-grusha-1000-ml",
       "name": "Лимонад Натахтарі Груша 1000 мл",
-      "category": "Холодні НАПОЇ",
-      "price": 100.0,
-      "description": "",
-      "labels": [
-        "1000мл"
-      ],
+      "cat": "drinks",
+      "price": 100,
+      "old": null,
+      "desc": "",
+      "weight": "1000 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_mdlQi-xjdqK-vCxYm.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/limonad-natahtari-grusha-1000-ml"
+      "badge": "",
+      "id": 57
     },
     {
-      "id": "limonad-natahtari-barbaris-500-ml",
       "name": "Лимонад Натахтарі Барбарис 500 мл",
-      "category": "Холодні НАПОЇ",
-      "price": 70.0,
-      "description": "",
-      "labels": [
-        "500мл"
-      ],
+      "cat": "drinks",
+      "price": 70,
+      "old": null,
+      "desc": "",
+      "weight": "500 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_LXaAe-gIkpI-LgfyJ.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/limonad-natahtari-barbaris-500-ml"
+      "badge": "",
+      "id": 58
     },
     {
-      "id": "limonad-natahtari-saperavi-1000-ml",
       "name": "Лимонад Натахтарі Сапераві 1000 мл",
-      "category": "Холодні НАПОЇ",
-      "price": 100.0,
-      "description": "",
-      "labels": [
-        "1000мл"
-      ],
+      "cat": "drinks",
+      "price": 100,
+      "old": null,
+      "desc": "",
+      "weight": "1000 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_lCMFP-WlCvb-GEqBD.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/limonad-natahtari-saperavi-1000-ml"
+      "badge": "",
+      "id": 59
     },
     {
-      "id": "napiy-pepsi",
       "name": "Напій PEPSI",
-      "category": "Холодні НАПОЇ",
-      "price": 45.0,
-      "description": "",
-      "labels": [
-        "0.33/0.5/1.25/1.75г"
-      ],
+      "cat": "drinks",
+      "price": 45,
+      "old": null,
+      "desc": "",
+      "weight": "0.33 / 0.5 / 1.25 / 1.75 л",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bQzfw-HFGBh-wcncp.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/napiy-pepsi"
+      "badge": "",
+      "id": 60
     },
     {
-      "id": "napiy-7up",
       "name": "Напій 7UP",
-      "category": "Холодні НАПОЇ",
-      "price": 45.0,
-      "description": "",
-      "labels": [
-        "0.33/0.5/1.25/1.75г"
-      ],
+      "cat": "drinks",
+      "price": 45,
+      "old": null,
+      "desc": "",
+      "weight": "0.33 / 0.5 / 1.25 / 1.75 л",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_pjTjr-ergLm-ZsJaj.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/napiy-7up"
+      "badge": "",
+      "id": 61
     },
     {
-      "id": "sik-sandora-tomat-1l",
       "name": "Сік Sandora ТОМАТ 1л",
-      "category": "Холодні НАПОЇ",
-      "price": 125.0,
-      "description": "",
-      "labels": [
-        "1л"
-      ],
+      "cat": "drinks",
+      "price": 125,
+      "old": null,
+      "desc": "",
+      "weight": "1 л",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bwbHI-YHGxe-alVPX.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/sik-sandora-tomat-1l"
+      "badge": "",
+      "id": 62
     },
     {
-      "id": "sik-sandora-v-asortimenti-1l",
       "name": "Сік Sandora в асортименті 1л",
-      "category": "Холодні НАПОЇ",
-      "price": 125.0,
-      "description": "",
-      "labels": [
-        "1л"
-      ],
+      "cat": "drinks",
+      "price": 125,
+      "old": null,
+      "desc": "",
+      "weight": "1 л",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_rFQfG-NUAic-QmHre.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/sik-sandora-v-asortimenti-1l"
+      "badge": "",
+      "id": 63
     },
     {
-      "id": "sik-dityachiy-agunya-0-2",
       "name": "Сік дитячий Агуня 0,2",
-      "category": "Холодні НАПОЇ",
-      "price": 35.0,
-      "description": "",
-      "labels": [
-        "200мл"
-      ],
+      "cat": "drinks",
+      "price": 35,
+      "old": null,
+      "desc": "",
+      "weight": "200 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_hdkeD-GVvIx-hGltB.png",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/sik-dityachiy-agunya-0-2"
+      "badge": "",
+      "id": 64
     },
     {
-      "id": "voda-karpatska-dzherelna-0-5-pet-negaz",
       "name": "Вода Карпатська Джерельна 0,5 ПЕТ негаз",
-      "category": "Холодні НАПОЇ",
-      "price": 30.0,
-      "description": "",
-      "labels": [
-        "500мл"
-      ],
+      "cat": "drinks",
+      "price": 30,
+      "old": null,
+      "desc": "",
+      "weight": "500 мл",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_wMLXt-DwAXP-yYxJV.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/voda-karpatska-dzherelna-0-5-pet-negaz"
+      "badge": "",
+      "id": 65
     },
     {
-      "id": "voda-karpatska-dzherelna-1-0-pet-gaz",
       "name": "Вода Карпатська Джерельна 1,0 ПЕТ газ",
-      "category": "Холодні НАПОЇ",
-      "price": 40.0,
-      "description": "",
-      "labels": [
-        "1л"
-      ],
+      "cat": "drinks",
+      "price": 40,
+      "old": null,
+      "desc": "",
+      "weight": "1 л",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_Bffvb-klUxw-cDFZa.webp",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/holodni-napoyi/voda-karpatska-dzherelna-1-0-pet-gaz"
+      "badge": "",
+      "id": 66
     },
     {
-      "id": "kava-espreso",
       "name": "Кава Еспресо",
-      "category": "Гарячі НАПОЇ",
-      "price": 45.0,
-      "description": "",
-      "labels": [
-        "1"
-      ],
+      "cat": "drinks",
+      "price": 45,
+      "old": null,
+      "desc": "",
+      "weight": "порція",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_rFtWf-JPfIj-ndptf.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/garyachi-napoyi/kava-espreso"
+      "badge": "",
+      "id": 67
     },
     {
-      "id": "kava-amerikano",
       "name": "Кава Американо",
-      "category": "Гарячі НАПОЇ",
-      "price": 55.0,
-      "description": "",
-      "labels": [
-        "1"
-      ],
+      "cat": "drinks",
+      "price": 55,
+      "old": null,
+      "desc": "",
+      "weight": "порція",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_RcWSE-KpPxH-JaWCe.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/garyachi-napoyi/kava-amerikano"
+      "badge": "",
+      "id": 68
     },
     {
-      "id": "kava-amerikano-z-molokom",
       "name": "Кава Американо з молоком",
-      "category": "Гарячі НАПОЇ",
-      "price": 65.0,
-      "description": "",
-      "labels": [
-        "1"
-      ],
+      "cat": "drinks",
+      "price": 65,
+      "old": null,
+      "desc": "",
+      "weight": "порція",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_fDFek-ordpr-mzqYw.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/garyachi-napoyi/kava-amerikano-z-molokom"
+      "badge": "",
+      "id": 69
     },
     {
-      "id": "kava-kapuchino",
       "name": "Кава Капучино",
-      "category": "Гарячі НАПОЇ",
-      "price": 65.0,
-      "description": "",
-      "labels": [
-        "1"
-      ],
+      "cat": "drinks",
+      "price": 65,
+      "old": null,
+      "desc": "",
+      "weight": "порція",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_gDYON-FJMqH-DbQHG.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/garyachi-napoyi/kava-kapuchino"
+      "badge": "",
+      "id": 70
     },
     {
-      "id": "kava-late",
       "name": "Кава Лате",
-      "category": "Гарячі НАПОЇ",
-      "price": 65.0,
-      "description": "",
-      "labels": [
-        "1"
-      ],
+      "cat": "drinks",
+      "price": 65,
+      "old": null,
+      "desc": "",
+      "weight": "порція",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_CUSIB-WCfnE-EtKUb.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/napoyi/garyachi-napoyi/kava-late"
+      "badge": "",
+      "id": 71
     },
     {
-      "id": "deruni-kartoplyani-1-1-3",
       "name": "Деруни картопляні 1+1=3",
-      "category": "1+1=3",
-      "price": 240.0,
-      "description": "1+1=3",
-      "labels": [
-        "480+240г"
-      ],
+      "cat": "offers",
+      "price": 240,
+      "old": null,
+      "desc": "Замов дві порції — третя буде у подарунок!",
+      "weight": "480+240 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_msGEF-YruLb-sEzVP.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/akciyi/1-1-3/deruni-kartoplyani-1-1-3"
+      "badge": "1+1=3",
+      "id": 72
     },
     {
-      "id": "kilcya-cibuli-1-1-3",
       "name": "Кільця цибулі 1+1=3",
-      "category": "1+1=3",
-      "price": 240.0,
-      "description": "1+1=3",
-      "labels": [
-        "300+150г"
-      ],
+      "cat": "offers",
+      "price": 240,
+      "old": null,
+      "desc": "Замов дві порції — третя буде у подарунок!",
+      "weight": "300+150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_CXHOJ-OZQJi-fCJGe.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/akciyi/1-1-3/kilcya-cibuli-1-1-3"
+      "badge": "1+1=3",
+      "id": 73
     },
     {
-      "id": "kartoplya-fri-1-1-3",
       "name": "Картопля фрі 1+1=3",
-      "category": "1+1=3",
-      "price": 120.0,
-      "description": "1+1=3",
-      "labels": [
-        "300+150г"
-      ],
+      "cat": "offers",
+      "price": 120,
+      "old": null,
+      "desc": "Замов дві порції — третя буде у подарунок!",
+      "weight": "300+150 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_GrIas-eoDHu-azNby.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/akciyi/1-1-3/kartoplya-fri-1-1-3"
+      "badge": "1+1=3",
+      "id": 74
     },
     {
-      "id": "hrustki-krilcya-srispy-97",
       "name": "Хрусткі крильця Сrispy %",
-      "category": "Цінові знижки %",
-      "price": 169.0,
-      "description": "",
-      "labels": [
-        "290г"
-      ],
+      "cat": "offers",
+      "price": 169,
+      "old": null,
+      "desc": "Цінова знижка",
+      "weight": "290 г",
       "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_HEFUh-XPtCp-LSJBC.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/akciyi/cinovi-znizhki/hrustki-krilcya-srispy-97"
-    },
-    {
-      "id": "sirni-kulki-filadelfiya-329",
-      "name": "Сирні кульки Філадельфія %",
-      "category": "Цінові знижки %",
-      "price": 169.0,
-      "description": "",
-      "labels": [
-        "150г"
-      ],
-      "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_DtERT-yBJCk-HJFLS.jpeg",
-      "sourceUrl": "https://scandia-pizza.choiceqr.com/section/akciyi/cinovi-znizhki/sirni-kulki-filadelfiya-329"
+      "badge": "ЗНИЖКА",
+      "id": 75
     }
   ]
 }

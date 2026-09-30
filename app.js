@@ -1,184 +1,140 @@
-/* Scandia Pizza — v5 functional demo
-   Design intentionally preserved. Static demo, no Node.js/backend required.
-*/
-const MENU_URL = './menu.json';
-const CART_KEY = 'scandiaCart_v5';
-const ORDERS_KEY = 'scandiaOrders_v1';
+const menu = {"source": "ChoiceQR snapshot supplied by user", "snapshot": "2026-09-29/30", "categories": {"all": "Все", "pizza": "Піца", "fry": "Фритюр", "combo": "Комбо", "sauces": "Соуси", "drinks": "Напої", "offers": "Акції"}, "items": [{"name": "Шаурма куряча", "cat": "pizza", "price": 332.5, "old": 350, "desc": "Тісто, соус шаурма, сир моцарела, курка копчена, курка варена, цибуля маринована, огірки, томати, морква по корейські та ще соус шаурма", "weight": "680/1040 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_RRKKd-iwXUo-FWBbq.png", "badge": "НОВИНКА", "id": 1}, {"name": "Шаурма з яловичиною", "cat": "pizza", "price": 370.5, "old": 390, "desc": "Тісто, соус шаурма, сир моцарела, яловичина смажена, цибуля маринована, огірки, томати, морква по корейські та ще соус шаурма", "weight": "680/1040 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_qUEoy-PeOdx-rXqGA.png", "badge": "НОВИНКА", "id": 2}, {"name": "Чізбургер", "cat": "pizza", "price": 304, "old": 320, "desc": "Тісто, соус бургерний, сир моцарела, сир чеддер, яловичина смажена, цибуля маринована, огірки солоні, томати, гірчиця та кетчуп", "weight": "630/990 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_KYJFi-ZmlqD-bhXXw.png", "badge": "", "id": 3}, {"name": "Бурітос", "cat": "pizza", "price": 332.5, "old": 350, "desc": "Тісто, соус мехікано, сир моцарела, яловичина смажена, кукурудза, цибуля маринована, томати, перець солодкий та перець чилі", "weight": "640/1005 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_nMjJC-bdNeG-ePpJq.png", "badge": "ГОСТРЕ", "id": 4}, {"name": "Креветка", "cat": "pizza", "price": 399, "old": 420, "desc": "Тісто, соус вершковий, сир моцарела, креветки, томати з грибами, спаржа та оливки, соус теріякі", "weight": "610/960 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_aWzxl-LdecH-mDPgl.png", "badge": "", "id": 5}, {"name": "Єгерська", "cat": "pizza", "price": 313.5, "old": 330, "desc": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, гриби, маринована цибуля та багато картоплі фрі", "weight": "680/1070 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IkhGe-DMxeG-FgirH.png", "badge": "", "id": 6}, {"name": "Кукурудзяний вайб", "cat": "pizza", "price": 304, "old": 320, "desc": "Тісто, соус вершковий, сир моцарела, кукурудза, курка варена, мисливські ковбаски, перець солодкий, цибуля маринована", "weight": "625/970 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_DoKbG-AOyIg-FeCdf.png", "badge": "", "id": 7}, {"name": "Мідії песто з сиром", "cat": "pizza", "price": 332.5, "old": 350, "desc": "Тісто, соус вершковий, сир моцарела, мідії, сир фета, сир дор блю, томати, соус песто", "weight": "615/1000 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bDLRg-brJPw-Ilkgv.jpeg", "badge": "", "id": 8}, {"name": "Груша Дор Блю з чорносливом", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус вершковий, груша, сир моцарела, сир дор блю, чорнослив", "weight": "580/940 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_EcTPe-urqOa-RANyz.png", "badge": "", "id": 9}, {"name": "Вершкова чорізо з песто", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, чорізо, томати, гриби, соус песто", "weight": "585/910 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_xSzqs-SSADM-QAkUG.png", "badge": "", "id": 10}, {"name": "Мікс салямі чіз", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус вершковий, сир моцарела, сир дор блю, салямі, чорізо", "weight": "560/900 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_tMuHF-bEwCt-FQQKr.png", "badge": "", "id": 11}, {"name": "Карбонара", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус вершковий, сир моцарела, сир пармезан, шинка, бекон, курка варена, жовток, гриби", "weight": "600/935 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_HuQNZ-aMWHb-SzHhq.png", "badge": "", "id": 12}, {"name": "ROYAL Цезарь", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус вершковий, сир моцарела, сир фета, курка варена, копчена курка, томати, салат", "weight": "600/970 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_xxvXk-flDdS-CJcTC.png", "badge": "", "id": 13}, {"name": "Українська", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус вершковий, сир моцарела, мисливські ковбаски, бекон, цибуля маринована, гриби, огірки солоні", "weight": "610/970 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IwxJC-DDvwT-ecDNg.png", "badge": "", "id": 14}, {"name": "4 сири", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус вершковий, сир моцарела, сир фета, сир дор блю, сир пармезан", "weight": "535/860 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_hmeaC-szlZm-GShCH.png", "badge": "", "id": 15}, {"name": "Гавайська", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус вершковий, сир моцарела, шинка, курка варена, ананас", "weight": "570/910 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_XTDPF-fMCIB-CkTpf.png", "badge": "", "id": 16}, {"name": "Дитяча", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус томатний, сир моцарела, салямі, курка варена, картопля фрі", "weight": "580/910 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_uIYJk-CBimE-JSCEz.png", "badge": "", "id": 17}, {"name": "Маргарита", "cat": "pizza", "price": 237.5, "old": 250, "desc": "Тісто, соус томатний, сир моцарела, томати", "weight": "520/840 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_jKbWM-wbXXN-xqLsC.jpeg", "badge": "", "id": 18}, {"name": "Салямі", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус томатний, сир моцарела, салямі, перець солодкий, маслини, томати", "weight": "580/930 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_tbDRG-sklBq-OSUvD.jpeg", "badge": "", "id": 19}, {"name": "Пепероні", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус томатний, сир моцарела, чорізо, томати", "weight": "580/900 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IzevG-sCtLT-Cicpj.jpeg", "badge": "", "id": 20}, {"name": "Неаполітанська", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус томатний, сир моцарела, шинка, гриби, ананаси, томати", "weight": "590/950 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_dqaYn-iZZDX-GmSLF.jpeg", "badge": "", "id": 21}, {"name": "Сицилійська", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус томатний, сир моцарела, шинка, бекон, перець солодкий, маслини", "weight": "570/900 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_NXKDD-zTeGG-sRJAv.jpeg", "badge": "", "id": 22}, {"name": "Мʼясна", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус томатний, сир моцарела, салямі, шинка, бекон, копчена курка, томати", "weight": "590/930 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IkYXd-lYaRW-BkLCI.jpeg", "badge": "", "id": 23}, {"name": "Домашня", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус томатний, сир моцарела, сир пармезан, салямі, чорізо, мисливські ковбаски, курка варена, цибуля маринована, перець солодкий, томати", "weight": "615/980 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_OJjJw-FekXa-HcFbF.jpeg", "badge": "", "id": 24}, {"name": "Американо", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус томатний, сир моцарела, мисливські ковбаски, курка варена, цибуля маринована, перець солодкий, томати", "weight": "570/900 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_BsVEt-rFgJG-jlglJ.jpeg", "badge": "", "id": 25}, {"name": "ВВQ", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус барбекю, сир моцарела, бекон, курка варена, копчена курка, цибуля маринована, гриби", "weight": "580/900 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_CaMID-RIHSD-eckIe.png", "badge": "", "id": 26}, {"name": "Баварський мисливець", "cat": "pizza", "price": 275.5, "old": 290, "desc": "Тісто, соус барбекю, сир моцарела, мисливські ковбаски, чорізо, бекон, цибуля маринована, перець солодкий, перець чилі, солоні огірки", "weight": "620/975 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ndWfm-vnOMO-JmkLP.jpeg", "badge": "ГОСТРЕ", "id": 27}, {"name": "Тропікана чилі", "cat": "pizza", "price": 266, "old": 280, "desc": "Тісто, соус барбекю, сир моцарела, курка варена, перець чилі, маслини, ананас", "weight": "580/915 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_kbWxb-WszGh-IZXLs.jpeg", "badge": "ГОСТРЕ", "id": 28}, {"name": "НОВИНКА №1", "cat": "pizza", "price": 199, "old": null, "desc": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, мисливські ковбаски, шинка, гриби, соус песто", "weight": "540/870 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_BLLVp-IFHSF-JMvjj.jpeg", "badge": "НОВИНКА", "id": 29}, {"name": "НОВИНКА №2", "cat": "pizza", "price": 199, "old": null, "desc": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, курка відварена, гриби, соус песто", "weight": "540/870 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_GqsaH-xEFOD-Ojgxy.jpeg", "badge": "НОВИНКА", "id": 30}, {"name": "НОВИНКА №3", "cat": "pizza", "price": 199, "old": null, "desc": "Тісто, один з 5 соусів для основи на вибір, сир моцарела, копчена курка, бекон, гриби, помідори, соус песто", "weight": "540/870 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bJTHw-RcFGC-CBCsV.jpeg", "badge": "НОВИНКА", "id": 31}, {"name": "Картопля фрі", "cat": "fry", "price": 57, "old": 60, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ZnWkF-EvUcy-IeAHD.jpeg", "badge": "", "id": 32}, {"name": "Картопля Діп", "cat": "fry", "price": 71.25, "old": 75, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_DxMJK-wmgpn-ItwoX.jpeg", "badge": "", "id": 33}, {"name": "Картопля по-селянськи", "cat": "fry", "price": 71.25, "old": 75, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_fdrtC-nwpia-NmJvH.jpeg", "badge": "", "id": 34}, {"name": "Деруни картопляні", "cat": "fry", "price": 114, "old": 120, "desc": "Замовляючи дві порції — третя порція буде у подарунок!", "weight": "240 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bTMCM-BEAGV-YDizr.jpeg", "badge": "", "id": 35}, {"name": "Кільця цибулі", "cat": "fry", "price": 114, "old": 120, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ItsdJ-bLDjc-DqNrq.jpeg", "badge": "", "id": 36}, {"name": "Стріпси курячі", "cat": "fry", "price": 152, "old": 160, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_dFmCp-kUmYC-PmFAH.jpeg", "badge": "", "id": 37}, {"name": "Нагетси", "cat": "fry", "price": 114, "old": 120, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_GNOrI-GRmCP-lFgLX.jpeg", "badge": "", "id": 38}, {"name": "Хрусткі крильця Сrispy", "cat": "fry", "price": 218.5, "old": 230, "desc": "", "weight": "290 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_eCUkf-IFCrF-DDRFo.jpeg", "badge": "", "id": 39}, {"name": "Сирні кульки Філадельфія", "cat": "fry", "price": 228, "old": 240, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_nJHhO-PViko-cNPeo.jpeg", "badge": "", "id": 40}, {"name": "Сирні палички Моцарела", "cat": "fry", "price": 218.5, "old": 230, "desc": "Сирні палички — м'який сир та хрумке панування. Вага порції — 150 г або 5 шт.", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_IivCb-RgdFI-bnJkK.png", "badge": "", "id": 41}, {"name": "Сирні кульки Чеддер з перцем Чилі", "cat": "fry", "price": 237.5, "old": 250, "desc": "", "weight": "150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_EugDJ-LyDvz-fJDtD.png", "badge": "ГОСТРЕ", "id": 42}, {"name": "Комбо бокс №1 (300 г) + соус в подарунок", "cat": "combo", "price": 190, "old": null, "desc": "Бокс містить: Картопля ФРІ, Нагетси курячі", "weight": "300 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_yFYym-wZSbe-FGyZH.png", "badge": "КОМБО", "id": 43}, {"name": "Комбо бокс №2 (450 г) + 2 соуса в подарунок", "cat": "combo", "price": 300, "old": null, "desc": "Бокс містить: Картопля ФРІ, Нагетси курячі, Кільця цибулі", "weight": "450 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ZvyWQ-NHIQC-fUzjD.png", "badge": "КОМБО", "id": 44}, {"name": "Комбо бокс №3 (690 г) + 3 соуса в подарунок", "cat": "combo", "price": 410, "old": null, "desc": "Бокс містить: Картопля ФРІ, Деруни, Нагетси, Кільця цибулі", "weight": "690 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_Fkkck-vJxPi-RKGRI.png", "badge": "КОМБО", "id": 45}, {"name": "Комбо бокс №4 (990 г) + 4 соуса в подарунок", "cat": "combo", "price": 715, "old": null, "desc": "Бокс містить: Картопля ФРІ, Картопля по-селянськи, Деруни, Нагетси курячі, Кільця цибулі, Хрусткі сирні кульки Філадельфія", "weight": "990 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_uKrfU-iwikb-aboAf.png", "badge": "КОМБО", "id": 46}, {"name": "Комбо бокс №5 (1200 г) + 5 соусів в подарунок", "cat": "combo", "price": 1100, "old": null, "desc": "Бокс містить: Картопля ФРІ, Картопля по-селянськи, Деруни, Нагетси курячі, Стріпси, Кільця цибулі, Сирні кульки ЧЕДДЕР з перцем Чилі, Хрусткі сирні кульки Філадельфія", "weight": "1200 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ITSlT-YwkGN-YVfAt.png", "badge": "КОМБО", "id": 47}, {"name": "Сметана 50 г.", "cat": "sauces", "price": 35, "old": null, "desc": "", "weight": "50 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_lhAzP-efySd-xkxUI.jpeg", "badge": "", "id": 48}, {"name": "Соус кетчуп 28 г.", "cat": "sauces", "price": 15, "old": null, "desc": "", "weight": "28 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_Ceajq-xjRkM-OtzmJ.webp", "badge": "", "id": 49}, {"name": "Соус кисло-солодкий 25 г.", "cat": "sauces", "price": 15, "old": null, "desc": "", "weight": "25 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_LNoYb-kYllU-AOqoG.webp", "badge": "", "id": 50}, {"name": "Соус BBQ 28 г.", "cat": "sauces", "price": 15, "old": null, "desc": "", "weight": "28 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_RWPFu-vDqFg-JbNiM.webp", "badge": "", "id": 51}, {"name": "Соус сирний 24 г.", "cat": "sauces", "price": 15, "old": null, "desc": "", "weight": "24 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_FpKiC-pjWKC-ylyIH.webp", "badge": "", "id": 52}, {"name": "Соус тартар 24 г.", "cat": "sauces", "price": 15, "old": null, "desc": "", "weight": "24 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_kJlvj-sIdnS-WrHGH.webp", "badge": "", "id": 53}, {"name": "Лимонад Натахтарі Тархун 500 мл", "cat": "drinks", "price": 70, "old": null, "desc": "", "weight": "500 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_ugZFq-dJebC-wCUIV.png", "badge": "", "id": 54}, {"name": "Лимонад Натахтарі Тархун 1000 мл", "cat": "drinks", "price": 100, "old": null, "desc": "", "weight": "1000 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_onFym-zvdwI-OepeO.webp", "badge": "", "id": 55}, {"name": "Лимонад Натахтарі Груша 500 мл", "cat": "drinks", "price": 70, "old": null, "desc": "", "weight": "500 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bBFEI-HJsgk-jlcaG.jpeg", "badge": "", "id": 56}, {"name": "Лимонад Натахтарі Груша 1000 мл", "cat": "drinks", "price": 100, "old": null, "desc": "", "weight": "1000 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_mdlQi-xjdqK-vCxYm.webp", "badge": "", "id": 57}, {"name": "Лимонад Натахтарі Барбарис 500 мл", "cat": "drinks", "price": 70, "old": null, "desc": "", "weight": "500 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_LXaAe-gIkpI-LgfyJ.png", "badge": "", "id": 58}, {"name": "Лимонад Натахтарі Сапераві 1000 мл", "cat": "drinks", "price": 100, "old": null, "desc": "", "weight": "1000 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_lCMFP-WlCvb-GEqBD.jpeg", "badge": "", "id": 59}, {"name": "Напій PEPSI", "cat": "drinks", "price": 45, "old": null, "desc": "", "weight": "0.33 / 0.5 / 1.25 / 1.75 л", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bQzfw-HFGBh-wcncp.jpeg", "badge": "", "id": 60}, {"name": "Напій 7UP", "cat": "drinks", "price": 45, "old": null, "desc": "", "weight": "0.33 / 0.5 / 1.25 / 1.75 л", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_pjTjr-ergLm-ZsJaj.png", "badge": "", "id": 61}, {"name": "Сік Sandora ТОМАТ 1л", "cat": "drinks", "price": 125, "old": null, "desc": "", "weight": "1 л", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_bwbHI-YHGxe-alVPX.png", "badge": "", "id": 62}, {"name": "Сік Sandora в асортименті 1л", "cat": "drinks", "price": 125, "old": null, "desc": "", "weight": "1 л", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_rFQfG-NUAic-QmHre.png", "badge": "", "id": 63}, {"name": "Сік дитячий Агуня 0,2", "cat": "drinks", "price": 35, "old": null, "desc": "", "weight": "200 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_hdkeD-GVvIx-hGltB.png", "badge": "", "id": 64}, {"name": "Вода Карпатська Джерельна 0,5 ПЕТ негаз", "cat": "drinks", "price": 30, "old": null, "desc": "", "weight": "500 мл", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_wMLXt-DwAXP-yYxJV.webp", "badge": "", "id": 65}, {"name": "Вода Карпатська Джерельна 1,0 ПЕТ газ", "cat": "drinks", "price": 40, "old": null, "desc": "", "weight": "1 л", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_Bffvb-klUxw-cDFZa.webp", "badge": "", "id": 66}, {"name": "Кава Еспресо", "cat": "drinks", "price": 45, "old": null, "desc": "", "weight": "порція", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_rFtWf-JPfIj-ndptf.jpeg", "badge": "", "id": 67}, {"name": "Кава Американо", "cat": "drinks", "price": 55, "old": null, "desc": "", "weight": "порція", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_RcWSE-KpPxH-JaWCe.jpeg", "badge": "", "id": 68}, {"name": "Кава Американо з молоком", "cat": "drinks", "price": 65, "old": null, "desc": "", "weight": "порція", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_fDFek-ordpr-mzqYw.jpeg", "badge": "", "id": 69}, {"name": "Кава Капучино", "cat": "drinks", "price": 65, "old": null, "desc": "", "weight": "порція", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_gDYON-FJMqH-DbQHG.jpeg", "badge": "", "id": 70}, {"name": "Кава Лате", "cat": "drinks", "price": 65, "old": null, "desc": "", "weight": "порція", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_CUSIB-WCfnE-EtKUb.jpeg", "badge": "", "id": 71}, {"name": "Деруни картопляні 1+1=3", "cat": "offers", "price": 240, "old": null, "desc": "Замов дві порції — третя буде у подарунок!", "weight": "480+240 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_msGEF-YruLb-sEzVP.jpeg", "badge": "1+1=3", "id": 72}, {"name": "Кільця цибулі 1+1=3", "cat": "offers", "price": 240, "old": null, "desc": "Замов дві порції — третя буде у подарунок!", "weight": "300+150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_CXHOJ-OZQJi-fCJGe.jpeg", "badge": "1+1=3", "id": 73}, {"name": "Картопля фрі 1+1=3", "cat": "offers", "price": 120, "old": null, "desc": "Замов дві порції — третя буде у подарунок!", "weight": "300+150 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_GrIas-eoDHu-azNby.jpeg", "badge": "1+1=3", "id": 74}, {"name": "Хрусткі крильця Сrispy %", "cat": "offers", "price": 169, "old": null, "desc": "Цінова знижка", "weight": "290 г", "image": "https://cdn-media.choiceqr.com/prod-eat-scandia-pizza/menu/thumbnail_HEFUh-XPtCp-LSJBC.jpeg", "badge": "ЗНИЖКА", "id": 75}]};
+const products = menu.items;
+const cats = menu.categories;
+let cat = "all";
+let cart = JSON.parse(localStorage.getItem("scandiaCart") || "[]");
 
-let products = [];
-let category = 'all';
-let cart = loadJson(CART_KEY, []);
-
-const cats = {
-  all: 'Все',
-  'Піца': 'Піца',
-  'Піца НОВИНКА': 'Новинки',
-  'Фритюр меню': 'Закуски',
-  'КОМБО БОКСИ': 'Комбо',
-  'Соуси': 'Соуси',
-  'Холодні НАПОЇ': 'Напої',
-  'Гарячі НАПОЇ': 'Кава та чай',
-  '1+1=3': '1+1=3',
-  'Цінові знижки %': 'Акції'
-};
-
-const $ = (s, root = document) => root.querySelector(s);
-const money = n => `${Number(n || 0).toLocaleString('uk-UA', { maximumFractionDigits: 2 })} ₴`;
-const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;' }[c]));
-const loadJson = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
-const saveJson = (key, value) => localStorage.setItem(key, JSON.stringify(value));
-
-async function init() {
-  try {
-    const res = await fetch(MENU_URL, { cache: 'no-store' });
-    if (!res.ok) throw new Error('Не вдалося завантажити menu.json');
-    const data = await res.json();
-    products = (data.items || []).filter(x => x.available !== false);
-  } catch (err) {
-    console.error(err);
-    products = [];
-  }
-  renderFilters();
-  renderProducts();
-  renderCart();
-  bindUI();
-}
+const $ = (s) => document.querySelector(s);
+const money = (n) => Number(n).toLocaleString("uk-UA", {maximumFractionDigits: 2}) + " ₴";
 
 function renderFilters() {
-  const availableCats = [...new Set(products.map(x => x.category))];
-  const visibleCats = ['all', ...availableCats];
-  $('#filters').innerHTML = visibleCats.map(c => `<button type="button" class="filter ${c === category ? 'active' : ''}" data-cat="${esc(c)}">${esc(c === 'all' ? 'Все' : (cats[c] || c))}</button>`).join('');
+  $("#filters").innerHTML = Object.entries(cats).map(([k,v]) =>
+    `<button class="filter ${k === cat ? "active" : ""}" data-cat="${k}">${v}</button>`
+  ).join("");
 }
 
 function renderProducts() {
-  const list = category === 'all' ? products : products.filter(x => x.category === category);
-  $('#products').innerHTML = list.length ? list.map(productCard).join('') : '<div class="empty-menu">Меню тимчасово недоступне. Відкрийте повне меню ChoiceQR.</div>';
+  const list = cat === "all" ? products : products.filter(x => x.cat === cat);
+  $("#products").innerHTML = list.map(x => `
+    <article class="product">
+      <div class="product-img">
+        <img src="${x.image}" alt="${x.name}" loading="lazy">
+        ${x.badge ? `<span class="badge">${x.badge}</span>` : ""}
+      </div>
+      <div class="product-body">
+        <div class="product-cat">${cats[x.cat]}</div>
+        <h3>${x.name}</h3>
+        ${x.desc ? `<p>${x.desc}</p>` : ""}
+        <p class="product-meta">${x.weight || ""}</p>
+        <div class="product-foot">
+          <span class="price">${x.old ? `<small class="old-price">${money(x.old)}</small> ` : ""}${money(x.price)}</span>
+          <button class="add" data-add="${x.id}">+ Додати</button>
+        </div>
+      </div>
+    </article>
+  `).join("");
 }
 
-function productCard(x) {
-  const labels = (x.labels || []).filter((v, i, a) => v && a.indexOf(v) === i).slice(0, 2);
-  const promo = x.price && x.price < parseFloat((x.labels || []).find(v => /^\d/.test(v)) || '') ? '' : '';
-  return `<article class="product" data-product="${esc(x.id)}" tabindex="0" role="button" aria-label="Відкрити ${esc(x.name)}">
-    <div class="product-img">${x.image ? `<img src="${esc(x.image)}" alt="${esc(x.name)}" loading="lazy">` : '<div class="image-placeholder"></div>'}${labels.length ? `<div class="product-badges">${labels.map(t => `<span class="badge">${esc(t)}</span>`).join('')}</div>` : ''}</div>
-    <div class="product-body"><div class="product-cat">${esc(cats[x.category] || x.category)}</div><h3>${esc(x.name)}</h3><p>${esc(x.description || labels.find(v => /г|мл|л/.test(v)) || 'Позиція з актуального меню')}</p><div class="product-foot"><span class="price">${x.price != null ? `від ${money(x.price)}` : 'Уточнити'}</span><button class="add" type="button" data-add="${esc(x.id)}">+ Додати</button></div></div>
-  </article>`;
+function save() {
+  localStorage.setItem("scandiaCart", JSON.stringify(cart));
+  renderCart();
 }
 
 function renderCart() {
-  const count = cart.reduce((sum, x) => sum + x.qty, 0);
-  const total = cart.reduce((sum, x) => sum + Number(x.price || 0) * x.qty, 0);
-  $('#cart-count').textContent = count;
-  $('#cart-total').textContent = money(total);
-  $('#cart-items').innerHTML = cart.length ? cart.map(item => `<div class="cart-item">
-    <img src="${esc(item.image || '')}" alt="${esc(item.name)}">
-    <div class="cart-item-main"><strong>${esc(item.name)}</strong><small>${money(item.price)}</small><div class="qty"><button type="button" data-dec="${esc(item.id)}" aria-label="Зменшити">−</button><b>${item.qty}</b><button type="button" data-inc="${esc(item.id)}" aria-label="Збільшити">+</button><button type="button" class="remove-item" data-remove="${esc(item.id)}">Видалити</button></div></div>
-  </div>`).join('') : '<div class="empty">Кошик поки порожній.<br>Але це легко виправити.</div>';
+  const count = cart.reduce((a,x) => a + x.q, 0);
+  const total = cart.reduce((a,x) => a + x.q * x.p, 0);
+  $("#cart-count").textContent = count;
+  $("#cart-total").textContent = money(total);
+  $("#cart-items").innerHTML = cart.length
+    ? cart.map(x => `
+      <div class="cart-item">
+        <img src="${x.image}" alt="${x.name}">
+        <div>
+          <strong>${x.name}</strong>
+          <small>${money(x.p)}</small>
+          <div class="qty">
+            <button data-dec="${x.id}">−</button>
+            <b>${x.q}</b>
+            <button data-inc="${x.id}">+</button>
+          </div>
+        </div>
+      </div>`).join("")
+    : `<div class="empty">Кошик поки порожній.<br>Але це легко виправити.</div>`;
 }
 
 function add(id) {
   const p = products.find(x => x.id === id);
-  if (!p || p.price == null) return;
-  const existing = cart.find(x => x.id === id);
-  if (existing) existing.qty += 1;
-  else cart.push({ id: p.id, name: p.name, price: Number(p.price), image: p.image || '', qty: 1, category: p.category });
-  persistCart();
+  if (!p) return;
+  const e = cart.find(x => x.id === id);
+  e ? e.q++ : cart.push({ ...p, q: 1, p: p.price });
+  save();
   openCart();
 }
 
-function change(id, delta) {
-  const item = cart.find(x => x.id === id);
-  if (!item) return;
-  item.qty += delta;
-  if (item.qty <= 0) cart = cart.filter(x => x.id !== id);
-  persistCart();
+function change(id, d) {
+  const x = cart.find(x => x.id === id);
+  if (!x) return;
+  x.q += d;
+  if (x.q <= 0) cart = cart.filter(y => y.id !== id);
+  save();
 }
 
-function removeItem(id) {
-  cart = cart.filter(x => x.id !== id);
-  persistCart();
+function openCart() {
+  $("#cart").classList.add("open");
+  $("#cart-overlay").classList.add("show");
+}
+function closeCart() {
+  $("#cart").classList.remove("open");
+  $("#cart-overlay").classList.remove("show");
 }
 
-function persistCart() { saveJson(CART_KEY, cart); renderCart(); }
-function openCart() { $('#cart').classList.add('open'); $('#cart-overlay').classList.add('show'); document.body.classList.add('no-scroll'); }
-function closeCart() { $('#cart').classList.remove('open'); $('#cart-overlay').classList.remove('show'); document.body.classList.remove('no-scroll'); }
+document.addEventListener("click", e => {
+  const f = e.target.closest("[data-cat]");
+  if (f) {
+    cat = f.dataset.cat;
+    renderFilters();
+    renderProducts();
+    return;
+  }
+  const a = e.target.closest("[data-add]");
+  if (a) {
+    add(Number(a.dataset.add));
+    return;
+  }
+  const inc = e.target.closest("[data-inc]");
+  if (inc) {
+    change(Number(inc.dataset.inc), 1);
+    return;
+  }
+  const dec = e.target.closest("[data-dec]");
+  if (dec) {
+    change(Number(dec.dataset.dec), -1);
+  }
+});
 
-function openProduct(id) {
-  const p = products.find(x => x.id === id);
-  if (!p) return;
-  const labels = (p.labels || []).filter((v, i, a) => v && a.indexOf(v) === i);
-  $('#product-modal-content').innerHTML = `<div class="product-modal-grid">
-    <div>${p.image ? `<img class="product-modal-image" src="${esc(p.image)}" alt="${esc(p.name)}">` : ''}</div>
-    <div><div class="eyebrow">${esc(cats[p.category] || p.category)}</div><h3>${esc(p.name)}</h3>${labels.length ? `<div class="modal-tags">${labels.map(t => `<span>${esc(t)}</span>`).join('')}</div>` : ''}<p class="modal-description">${esc(p.description || 'Опис позиції відсутній у збереженому меню.')}</p><div class="modal-price">${p.price != null ? `від ${money(p.price)}` : 'Уточнити ціну'}</div><div class="modal-actions">${p.price != null ? `<button class="btn btn-primary" data-modal-add="${esc(p.id)}">Додати до кошика</button>` : ''}${p.sourceUrl ? `<a class="btn btn-ghost" href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">Відкрити в ChoiceQR ↗</a>` : ''}</div></div>
-  </div>`;
-  $('#product-modal').classList.add('show'); $('#product-modal').setAttribute('aria-hidden', 'false'); document.body.classList.add('no-scroll');
-}
-function closeProduct() { $('#product-modal').classList.remove('show'); $('#product-modal').setAttribute('aria-hidden', 'true'); document.body.classList.remove('no-scroll'); }
+$("#open-cart").onclick = openCart;
+$("#close-cart").onclick = closeCart;
+$("#cart-overlay").onclick = closeCart;
+$("#clear-cart").onclick = () => { cart = []; save(); };
 
-function openCheckout() {
-  if (!cart.length) { alert('Додайте хоча б одну позицію до кошика.'); return; }
-  closeCart();
-  $('#order-form').hidden = false;
-  $('#order-success').hidden = true;
-  $('#checkout-summary').innerHTML = `<strong>${cart.reduce((s,x)=>s+x.qty,0)} позицій · ${money(cart.reduce((s,x)=>s+x.price*x.qty,0))}</strong>`;
-  updateDeliveryFields();
-  $('#checkout-modal').classList.add('show'); $('#checkout-modal').setAttribute('aria-hidden', 'false'); document.body.classList.add('no-scroll');
-}
-function closeCheckout() { $('#checkout-modal').classList.remove('show'); $('#checkout-modal').setAttribute('aria-hidden', 'true'); document.body.classList.remove('no-scroll'); }
-function updateDeliveryFields() { $('#delivery-fields').hidden = $('#order-type').value !== 'delivery'; }
+$("#burger").onclick = () => $("#main-nav").classList.toggle("show");
 
-function makeOrder(form) {
-  const fd = new FormData(form);
-  const total = cart.reduce((s,x)=>s + x.price * x.qty, 0);
-  const now = new Date();
-  const stamp = now.toISOString();
-  const orders = loadJson(ORDERS_KEY, []);
-  const seq = orders.length ? Math.max(...orders.map(o => Number(String(o.id).replace(/\D/g,'')) || 0)) + 1 : 1;
-  const order = {
-    id: `SC-${String(seq).padStart(4,'0')}`,
-    createdAt: stamp,
-    status: 'NEW',
-    customer: { name: fd.get('name').trim(), phone: fd.get('phone').trim() },
-    fulfillment: fd.get('type'),
-    address: fd.get('address')?.trim() || '',
-    apartment: fd.get('apartment')?.trim() || '',
-    floor: fd.get('floor')?.trim() || '',
-    intercom: fd.get('intercom')?.trim() || '',
-    comment: fd.get('comment')?.trim() || '',
-    items: cart.map(x => ({ id:x.id, name:x.name, price:x.price, qty:x.qty, image:x.image })),
-    subtotal: total,
-    deliveryFee: null,
-    total,
-    source: 'scandia-static-demo'
-  };
-  orders.unshift(order);
-  saveJson(ORDERS_KEY, orders);
-  cart = [];
-  persistCart();
-  form.hidden = true;
-  $('#order-success').innerHTML = `<strong>Замовлення ${esc(order.id)} створено.</strong><br>Сума: ${money(order.total)}<br><small>Демо-замовлення збережене в браузері та доступне в <a href="admin.html">адмінці</a>.</small>`;
-  $('#order-success').hidden = false;
-}
+$("#checkout-btn").onclick = () => {
+  if (!cart.length) {
+    alert("Додайте хоча б одну позицію до кошика.");
+    return;
+  }
+  $("#checkout-modal").classList.add("show");
+};
 
-function bindUI() {
-  document.addEventListener('click', e => {
-    const f = e.target.closest('[data-cat]'); if (f) { category = f.dataset.cat; renderFilters(); renderProducts(); return; }
-    const a = e.target.closest('[data-add]'); if (a) { e.stopPropagation(); add(a.dataset.add); return; }
-    const inc = e.target.closest('[data-inc]'); if (inc) { change(inc.dataset.inc, 1); return; }
-    const dec = e.target.closest('[data-dec]'); if (dec) { change(dec.dataset.dec, -1); return; }
-    const rem = e.target.closest('[data-remove]'); if (rem) { removeItem(rem.dataset.remove); return; }
-    const card = e.target.closest('[data-product]'); if (card && !e.target.closest('button,a')) { openProduct(card.dataset.product); return; }
-    const modalAdd = e.target.closest('[data-modal-add]'); if (modalAdd) { add(modalAdd.dataset.modalAdd); closeProduct(); return; }
-  });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeCart(); closeProduct(); closeCheckout(); } if (e.key === 'Enter' && document.activeElement?.matches('[data-product]')) openProduct(document.activeElement.dataset.product); });
-  $('#open-cart').onclick = openCart; $('#close-cart').onclick = closeCart; $('#cart-overlay').onclick = closeCart;
-  $('#clear-cart').onclick = () => { if (!cart.length) return; if (confirm('Очистити кошик?')) { cart = []; persistCart(); } };
-  $('#checkout-btn').onclick = openCheckout;
-  $('#close-modal').onclick = closeCheckout;
-  $('#close-product-modal').onclick = closeProduct;
-  $('#order-type').onchange = updateDeliveryFields;
-  $('#order-form').onsubmit = e => { e.preventDefault(); makeOrder(e.currentTarget); };
-  $('#burger').onclick = () => $('#main-nav').classList.toggle('show');
-  document.querySelectorAll('#main-nav a').forEach(a => a.addEventListener('click', () => $('#main-nav').classList.remove('show')));
-}
+$("#close-modal").onclick = () => $("#checkout-modal").classList.remove("show");
 
-init();
+$("#order-form").onsubmit = e => {
+  e.preventDefault();
+  $("#order-form").hidden = true;
+  $("#order-success").hidden = false;
+};
+
+renderFilters();
+renderProducts();
+renderCart();
